@@ -1,4 +1,3 @@
-
 .divider {
   width: 100%;
   height: 3rem;
@@ -20,6 +19,10 @@ h2 {
 
 .instagram-feed {
   border-radius: 20px;
+}
+
+#nika-logo {
+  width: 30px;
 }
 
 #ig-button {
@@ -159,7 +162,13 @@ nav ul li {
   color: #fff;
 }
 
+
+/*Tablety*/
 @media (min-width: 48rem) {
+  #nika-logo {
+    width: 70px;
+  }
+
   nav ul li {
     list-style: none;
     display: inline-block;
@@ -212,6 +221,10 @@ nav ul li {
 
 /*Primary PC*/
 @media (min-width: 85rem) {
+  #nika-logo {
+    width: 70px;
+  }
+
   .container-headline h1 {
     display: block;
     font-size: 8rem;
