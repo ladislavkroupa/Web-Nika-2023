@@ -57,7 +57,7 @@ h2 {
 }
 
 .zoom-wrapper {
-  min-height: fit-content;
+  min-height: 250px;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0px 05px 100px black;
