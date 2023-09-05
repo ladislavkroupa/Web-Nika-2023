@@ -58,13 +58,13 @@ h2 {
 
 .zoom-wrapper {
   min-height: 250px;
-  overflow: hidden;
   border-radius: 20px;
   box-shadow: 0px 05px 100px black;
 }
 
 #about-me-photo {
   min-height: 250px;
+  border-radius: 20px;
 }
 
 #ig-feed > .container {
@@ -93,9 +93,9 @@ h2 {
 }
 
 .zoom-wrapper img {
+  min-height: 250px;
   object-fit: scale-down;
   transition: transform 0.8s;
-  height: 100%;
 }
 
 .zoom-wrapper:hover img {
