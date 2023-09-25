@@ -8,6 +8,21 @@
     inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
+.control-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #cecece;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 2.2em;
+  color: black;
+}
+
 #ig-feed {
   border-radius: 20px;
 }
@@ -72,8 +87,12 @@ h2 {
   box-shadow: 0px 05px 100px black;
 }
 
+#about-me {
+  padding-top: 0;
+}
+
 #about-me-photo {
-  min-height: 250px;
+  max-height: 800px;
   border-radius: 20px;
 }
 
@@ -86,30 +105,18 @@ h2 {
     #cc2366 75%,
     #bc1888 100%
   );
- border-radius: 20px;
-  filter: drop-shadow(
-    0 0 0.75rem #dc2743);
-    
+  border-radius: 20px;
+  filter: drop-shadow(0 0 0.75rem #dc2743);
 }
-
-
 
 #ig-feed > .container h2 {
   font-family: "Instagram Sans Script", sans-serif;
   -webkit-text-stroke: 2px #ffffff;
   color: transparent;
   margin: 0;
-  
 }
 
 .zoom-wrapper img {
-  min-height: 250px;
-  object-fit: scale-down;
-  transition: transform 0.8s;
-}
-
-.zoom-wrapper:hover img {
-  transform: scale(1.1);
 }
 
 .btn-about-me {
@@ -143,6 +150,38 @@ h2 {
 
 video {
   width: 100%;
+}
+
+.carousel-item > img {
+  width: 100%;
+  max-height: 800px;
+  border-radius: 20px;
+}
+
+.carousel-item {
+  width: 100%;
+  max-height: 800px;
+  border-radius: 20px;
+}
+
+.carousel-section {
+  filter: drop-shadow(3px 5px 15px rgba(0, 0, 0));
+}
+
+#bikini-fitness {
+  filter: drop-shadow(3px 2px 14px rgba(0, 0, 0, 0.27));
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 10px;
+  font-weight: 600;
+  word-spacing: 15px;
+}
+
+
+#my-way {
+  width: 30%;
+  background-color: #0032ac;
+  color: white;
+  font-size: large;
 }
 
 /* Need a specific value to work */
@@ -255,6 +294,10 @@ nav ul li {
 
 /*Primary PC*/
 @media (min-width: 85rem) {
+  .control-button {
+    display: none;
+  }
+
   #nika-logo {
     width: 70px;
   }
