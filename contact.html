@@ -23,6 +23,18 @@
       crossorigin="anonymous"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -34,6 +46,7 @@
   </head>
 
   <body class="bg-dark">
+    <!--
     <header>
       <nav class="navbar fixed-top navbar-expand-md p-3">
         <div class="container">
@@ -79,41 +92,42 @@
         </div>
       </nav>
     </header>
-
-    <div id="contact" class="divider mt-5 bg-light"></div>
-
-    <section class="contact text-white mt-3">
+  -->
+    <section class="contact text-white mt-5">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-6">
-            <h2 class="text-decoration-underline mb-5">Kontakt</h2>
-
-            <h3 class="fs-1 mb-4">Kde mě najdeš?</h3>
+          <div class="d-flex flex-column justify-content-start text-center col-lg-6 col-12">
+            <h1 class="contact-headline mb-4">Kde mě najdeš?</h1>
+            <a
+              id="ff-address"
+              href="https://www.formfactory.cz/klub/fitness-pankrac/"
+              ><h5>Form Factory Fitness Club Pankrác</h5>
+              <h6>
+                Hvězdova 1689/2a <br />
+                140 00 Praha 4-Nusle
+              </h6></a
+            >
+            <div class="container d-flex justify-content-center col-12">
+              <div class="contact-information p-5">
+                <ul class="d-flex align-items-start flex-column">
+                  <li class="lead"><a href="tel:+420773029733">+420 773 029 733</a></li>
+                  <li class="lead">n.malyjurkova@gmail.com</li>
+                  <li class="lead">@nikamalyjurkova</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center col-lg-6 col-12">
             <a
               href="https://www.google.com/maps/place/Form+Factory+Fitness+Club+Pankr%C3%A1c/@50.0506663,14.4366346,19.5z/data=!4m6!3m5!1s0x470b95ea343ad609:0x338591bad045e508!8m2!3d50.0508659!4d14.4360473!16s%2Fg%2F11rk87knx4?entry=ttu"
-              >
-              <h4 class="">Form Factory Fitness Club Pankrác</h4>
-            </a>
-            <h5>Hvězdova 1689/2a <br> 140 00 Praha 4-Nusle</h5>
-            <a href="https://www.formfactory.cz/klub/fitness-pankrac/"><img
-              class="bulding-image"
-              src="./images/ff-building-photo.jpg"
-              width="300px"
-              height="300px"
-              alt=""
+            >
+              <img
+                id="ff-building-photo"
+                class="img-fluid"
+                src="./images/ff-building-photo.jpg"
+                alt="form-factory-building"
             /></a>
-              
-
-            
           </div>
-
-            <div class="col col-lg-6 mt-5">
-              <a href="https://www.formfactory.cz/klub/fitness-pankrac/"><img
-              class="bulding-image"
-              src="./images/map_pin.jpg"
-              alt=""
-            /></a>
-            </div>
         </div>
       </div>
     </section>
