@@ -88,7 +88,7 @@
         <!--
         <img
           id="mobile-img"
-          src="./images/nika-hero-mobile-photo_01.jpg"
+          src="./images/nika_wide.jpeg"
           alt="poster image mobile"
           class="poster img-fluid mx-auto d-block d-md-none"
         />-->
@@ -149,7 +149,7 @@
                 <div class="row my-3">
                   <div class="d-flex justify-content-evenly mx-auto col mb-5">
                     <a href="#my-reviews"
-                      ><button class="btn btn btn-success btn-lg">
+                      ><button id="rev-button" class="btn btn btn-success btn-lg">
                         Recenze
                       </button></a
                     >
@@ -188,12 +188,11 @@
                 IFBB BIKINI FITNESS
               </h2>
               <p class="text-center fs-5 fw-normal">
-                "MOTIVACE JE TO, DÍKY ČEMU ZAČNETE. <br />
-                ZVYK JE TO, DÍKY ČEMU V TOM BUDETE POKRAČOVAT."
+                "ONE DAY OR DAY ONE <br> IT'S UP TO YOU."
               </p>
               <br />
               <div class="d-flex justify-content-center mt-1 mb-3">
-                <button id="my-way" class="btn btn-warning mx-2">
+                <button id="my-way-button" class="btn mx-2">
                   Moje cesta
                 </button>
               </div>
@@ -206,7 +205,7 @@
                 id="carouselExampleIndicators"
                 class="carousel slide"
                 data-bs-ride="carousel"
-                data-bs-interval="4500"
+                data-bs-interval="3000"
               >
                 <div class="carousel-indicators">
                   <button
@@ -409,11 +408,89 @@
 
     <div id="contact" class="divider mt-5 bg-light"></div>
 
-    <section class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2 text>Kontakt</h2>
+    <section id="contanct">
+      <div class="container my-5 text-white hero-contact">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 pb-lg-5 align-items-center">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-white">
+              Kde mě najdeš?
+            </h1>
+            <!-- <h1 class="fw-bold lh-1 mt-lg-4">Ozvi se mi!</h1>-->
+            <p class="lead mt-lg-4">
+              Osobní tréninky probíhají v klubu FormFactory Fitness Pankrác,
+              můžeš mě kontaktovat přes kontaktní údaje níže.
+            </p>
+            <div class="d-grid d-md-flex row">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-4 mt-lg-1 lead">
+                <a
+                  id="ff-address"
+                  href="https://www.formfactory.cz/klub/fitness-pankrac/"
+                  ><h5>Form Factory Fitness Club Pankrác</h5>
+                  <h6>
+                    Hvězdova 1689/2a <br />
+                    140 00 Praha 4-Nusle
+                  </h6></a
+                >
+              </div>
+              <div
+                class="d-flex justify-content-start justify-content-md-start align-items-center map-button col p-lg-5 pt-lg-4 mt-lg-1 mb-4"
+              >
+                <a
+                  href="https://www.google.com/maps/place/Form+Factory+Fitness+Club+Pankr%C3%A1c/@50.0506663,14.4366346,19.5z/data=!4m6!3m5!1s0x470b95ea343ad609:0x338591bad045e508!8m2!3d50.0508659!4d14.4360473!16s%2Fg%2F11rk87knx4?entry=ttu"
+                  class="text-white"
+                  ><button
+                    id="maps-button"
+                    type="button"
+                    class="btn btn-primary fs-5"
+                  >
+                    Google mapy
+                  </button></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="d-flex justify-content-center flex-column mb-4 mb-lg-auto mt-lg-4 contacts"
+            >
+              <button
+                id="phone-button"
+                type="button"
+                class="btn btn-lg px-4 mb-2 fs-5"
+              >
+                <a href="tel:+420773029733">+420 773 029 733</a>
+              </button>
+              <button
+                id="email-button"
+                type="button"
+                class="btn btn-lg px-4 mb-2 d-flex justify-content-center align-items-center"
+              >
+                <!-- <img src="./icons/envelope_mail.svg" class="mx-2" alt="" height="30px">-->
+                <a href="mailto:n.malyjurkova@gmail.com"
+                  >n.malyjurkova@gmail.com</a
+                >
+              </button>
+
+              <button
+                id="igg-button"
+                type="button"
+                class="btn btn-lg px-4 mb-2"
+              >
+                <a href="https://www.instagram.com/nikamalyjurkova"
+                  >@nikamalyjurkova</a
+                >
+              </button>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center col-lg-4 p-0 overflow-hidden shadow-lg rounded-3"
+          >
+            <img
+              id="hero-img"
+              class="rounded-lg-3"
+              src="./images/nika_wide.jpeg"
+              alt=""
+              width="720"
+            />
           </div>
         </div>
       </div>

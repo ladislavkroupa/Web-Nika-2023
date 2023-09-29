@@ -36,16 +36,13 @@ h2 {
   border-radius: 20px;
 }
 
-.contact a {
-  color: white;
-  text-decoration: none;
-}
-
 #nika-logo {
   width: 30px;
 }
 
 .bulding-image {
+  min-width: 40%;
+  height: 500px;
   border-radius: 20px;
   box-shadow: 0px 10px 50px black;
 }
@@ -158,6 +155,13 @@ video {
   border-radius: 20px;
 }
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .carousel-item {
   width: 100%;
   max-height: 800px;
@@ -176,9 +180,8 @@ video {
   word-spacing: 15px;
 }
 
-
-#my-way {
-  width: 30%;
+#my-way-button {
+  min-width: 45%;
   background-color: #0032ac;
   color: white;
   font-size: large;
@@ -236,6 +239,113 @@ nav ul li {
   color: #fff;
 }
 
+/*Contact page*/
+body {
+  background-color: #535353;
+}
+
+.hero-contact {
+  border-radius: 20px;
+  background-color: #212529;
+  box-shadow: 4px 5px 25px black;
+}
+
+#hero-img {
+  scale: 1.27;
+}
+
+.contact-headline {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+#ff-address {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+#ff-address:hover {
+  color: #cecece;
+}
+
+#ff-building-photo {
+  max-width: 100%;
+  max-height: 80%;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 5px 15px black;
+}
+
+.contact-information > li > a {
+  color: white;
+  list-style: none;
+  text-decoration: dashed;
+}
+.contact-information {
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.contacts {
+  font-family: "Poppins", sans-serif;
+}
+
+.contacts > button > a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contacts > button {
+  background-color: #ce0b0ede;
+}
+
+.map-button > a > button {
+  color: black;
+  background-color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+/*
+#phone-button {
+  background-color: #7418E7;
+  border: none;
+}
+
+#email-button {
+  background-color: #18E774;
+}
+
+#igg-button {
+background-color: #E77418;
+}
+
+*/
+
+#write-me {
+  font-family: "Work Sans", sans-serif;
+  font-size: 4rem;
+  color: black;
+}
+
+.write-me {
+  box-shadow: 3px 5px 15px black;
+  background-color: #f09433;
+}
+
+.contact-information > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-information > ul {
+  list-style: none;
+}
+
 /*Tablety*/
 @media (min-width: 48rem) {
   #nika-logo {
@@ -290,10 +400,19 @@ nav ul li {
   .container-headline a {
     display: none;
   }
+
+  .contacts > button > a {
+    font-size: 20px;
+  }
 }
 
 /*Primary PC*/
 @media (min-width: 85rem) {
+
+  .contacts > button > a {
+    font-size: 20px;
+  }
+
   .control-button {
     display: none;
   }

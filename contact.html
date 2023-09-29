@@ -44,8 +44,95 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+  <body>
+    <section id="contanct">
+      <div class="container my-5 text-white hero-contact">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 pb-lg-5 align-items-center">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+              Kde mě najdeš?
+            </h1>
+            <!-- <h1 class="fw-bold lh-1 mt-lg-4">Ozvi se mi!</h1>-->
+            <p class="lead mt-lg-4">
+              Osobní tréninky probíhají v klubu FormFactory Fitness Pankrác,
+              můžeš mě kontaktovat přes kontaktní údaje níže.
+            </p>
+            <div class="d-grid d-md-flex row">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-4 mt-lg-1 lead">
+                <a
+                  id="ff-address"
+                  href="https://www.formfactory.cz/klub/fitness-pankrac/"
+                  ><h5>Form Factory Fitness Club Pankrác</h5>
+                  <h6>
+                    Hvězdova 1689/2a <br />
+                    140 00 Praha 4-Nusle
+                  </h6></a
+                >
+              </div>
+              <div
+                class="d-flex justify-content-start justify-content-md-start align-items-center map-button col p-lg-5 pt-lg-4 mt-lg-1 mb-4"
+              >
+                <a
+                  href="https://www.google.com/maps/place/Form+Factory+Fitness+Club+Pankr%C3%A1c/@50.0506663,14.4366346,19.5z/data=!4m6!3m5!1s0x470b95ea343ad609:0x338591bad045e508!8m2!3d50.0508659!4d14.4360473!16s%2Fg%2F11rk87knx4?entry=ttu"
+                  class="text-white"
+                  ><button
+                    id="maps-button"
+                    type="button"
+                    class="btn btn-primary fs-5"
+                  >
+                    Google mapy
+                  </button></a
+                >
+              </div>
+            </div>
 
-  <body class="bg-dark">
+            <div
+              class="d-flex justify-content-center flex-column mb-4 mb-lg-auto mt-lg-4 contacts"
+            >
+              <button
+                id="phone-button"
+                type="button"
+                class="btn btn-lg px-4 mb-2 fs-5"
+              >
+                <a href="tel:+420773029733">+420 773 029 733</a>
+              </button>
+              <button
+                id="email-button"
+                type="button"
+                class="btn btn-lg px-4 mb-2 d-flex justify-content-center align-items-center"
+              >
+                <!-- <img src="./icons/envelope_mail.svg" class="mx-2" alt="" height="30px">-->
+                <a href="mailto:n.malyjurkova@gmail.com"
+                  >n.malyjurkova@gmail.com</a
+                >
+              </button>
+
+              <button
+                id="igg-button"
+                type="button"
+                class="btn btn-lg px-4 mb-2"
+              >
+                <a href="https://www.instagram.com/nikamalyjurkova"
+                  >@nikamalyjurkova</a
+                >
+              </button>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center col-lg-4 p-0 overflow-hidden shadow-lg rounded-3"
+          >
+            <img
+              id="hero-img"
+              class="rounded-lg-3"
+              src="./images/nika_wide.jpeg"
+              alt=""
+              width="720"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--
     <header>
       <nav class="navbar fixed-top navbar-expand-md p-3">
@@ -92,11 +179,13 @@
         </div>
       </nav>
     </header>
-  -->
-    <section class="contact text-white mt-5">
+ 
+    <section class="contact text-white">
       <div class="container">
         <div class="row">
-          <div class="d-flex flex-column justify-content-start text-center col-lg-6 col-12">
+          <div
+            class="d-flex flex-column justify-content-start text-center col-lg-6 col-12"
+          >
             <h1 class="contact-headline mb-4">Kde mě najdeš?</h1>
             <a
               id="ff-address"
@@ -107,30 +196,93 @@
                 140 00 Praha 4-Nusle
               </h6></a
             >
-            <div class="container d-flex justify-content-center col-12">
-              <div class="contact-information p-5">
-                <ul class="d-flex align-items-start flex-column">
-                  <li class="lead"><a href="tel:+420773029733">+420 773 029 733</a></li>
-                  <li class="lead">n.malyjurkova@gmail.com</li>
-                  <li class="lead">@nikamalyjurkova</li>
+          </div>
+          <div class="row">
+            <div class="d-flex justify-content-center col-lg-6 col-12">
+              <a
+                href="https://www.google.com/maps/place/Form+Factory+Fitness+Club+Pankr%C3%A1c/@50.0506663,14.4366346,19.5z/data=!4m6!3m5!1s0x470b95ea343ad609:0x338591bad045e508!8m2!3d50.0508659!4d14.4360473!16s%2Fg%2F11rk87knx4?entry=ttu"
+              >
+                <img
+                  id="ff-building-photo"
+                  class="img-fluid"
+                  src="./images/ff-building-photo.jpg"
+                  alt="form-factory-building"
+              /></a>
+            </div>
+
+            <div
+              class="d-flex justify-content-start align-items-center container mt-5 col-lg-6 col-12 flex-column"
+            >
+              <div class="contact-information p-4">
+                <h1 class="contact-headline text-center text-decoration-underline">Kontaktní údaje</h1>
+                <ul class="fs-4">
+                  <li class="">
+                    <a href="tel:+420773029733">+420 773 029 733</a>
+                  </li>
+                  <li>
+                    <a href="mailto:n.malyjurkova@gmail.com"
+                      >n.malyjurkova@gmail.com</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="https://www.instagram.com/nikamalyjurkova"
+                      >@nikamalyjurkova</a
+                    >
+                  </li>
                 </ul>
               </div>
+              
+              <div class="row p-5 rounded-5 mt-5 write-me">
+                <div class="container">
+                  <h1 id="write-me" class="text-center">NAPIŠ MI!</h1>
+                </div>
+              </div>
+              
             </div>
-          </div>
-          <div class="d-flex justify-content-center col-lg-6 col-12">
-            <a
-              href="https://www.google.com/maps/place/Form+Factory+Fitness+Club+Pankr%C3%A1c/@50.0506663,14.4366346,19.5z/data=!4m6!3m5!1s0x470b95ea343ad609:0x338591bad045e508!8m2!3d50.0508659!4d14.4360473!16s%2Fg%2F11rk87knx4?entry=ttu"
-            >
-              <img
-                id="ff-building-photo"
-                class="img-fluid"
-                src="./images/ff-building-photo.jpg"
-                alt="form-factory-building"
-            /></a>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="container text-white">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
+            <img
+              src="./icons/Logo_Nika_white_navbar.png"
+              width="24"
+              height="30"
+              alt="nika-footer-logo"
+            />
+          </a>
+          <span class="mx-3 mb-3 mb-md-0 text-white">© 2023 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+     -->
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
