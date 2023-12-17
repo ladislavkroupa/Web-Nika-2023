@@ -1,11 +1,15 @@
+.contanct-section {
+  margin-top: 180px;
+}
 
 .divider-light {
-      width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid rgba(255, 255, 255, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 .divider {
@@ -22,15 +26,21 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: #cecece;
-  width: 50px;
-  height: 50px;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
   z-index: 10;
   margin-bottom: 20px;
   margin-right: 10px;
-  border-radius: 20px;
-  font-size: 2.2em;
+  border-radius: 50%;
+  font-size: 2em;
   color: black;
+  text-decoration: none;
+  filter: drop-shadow(0 0 0.35rem #030303);
+}
+
+#chevron-up {
+  filter: drop-shadow(0 0 0.05rem #1a1919);
 }
 
 #ig-feed {
@@ -122,8 +132,6 @@ h2 {
   color: transparent;
   margin: 0;
 }
-
-
 
 .btn-about-me {
   background-color: #380d21;
@@ -287,7 +295,7 @@ body {
   box-shadow: 3px 5px 15px black;
 }
 
-.contact-information > li > a {
+.contact > li > a {
   color: white;
   list-style: none;
   text-decoration: dashed;
@@ -302,10 +310,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.contacts > button > a {
+.contacts > a > button {
   color: white;
   text-decoration: none;
-  font-size: 15px;
 }
 
 #maps-button:hover {
@@ -313,9 +320,12 @@ body {
   color: black;
 }
 
-.contacts > button:hover {
-  
+.contacts > a:hover {
   background-color: #9e0407de;
+}
+
+.contacts > a {
+  background-color: #ce0b0ede;
 }
 
 .contacts > button {
@@ -364,6 +374,56 @@ background-color: #E77418;
 .contact-information > ul {
   list-style: none;
 }
+
+
+#rev-button {
+  background-color: #E79302;
+}
+
+.buttons-hero > a > button {
+  letter-spacing: 1.5px;
+}
+
+
+
+
+/*Fonts*/
+.text-black {
+  color: black;
+}
+
+.font-bold-400 {
+  font-weight: 400 !important;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.font-pretty {
+    font-family: "Work Sans",sans-serif;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+
+.btn-card {
+  background-color: #390E21;
+}
+
+
+
+
+
+
+
+
 
 /*Tablety*/
 @media (min-width: 48rem) {
@@ -427,13 +487,25 @@ background-color: #E77418;
 
 /*Primary PC*/
 @media (min-width: 85rem) {
+  .control-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    filter: drop-shadow(0 0 0.55rem #030303);
+  }
 
   .contacts > button > a {
     font-size: 20px;
-  }
-
-  .control-button {
-    display: none;
   }
 
   #nika-logo {
@@ -477,4 +549,54 @@ background-color: #E77418;
     width: auto;
     height: 100%;
   }
+}
+
+/* Services list Card*/
+
+#zdarma {
+  font-size: 20px;
+  color: #d81515;
+  font-weight: bolder;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+}
+
+.card-side.front {
+  transform: rotateY(0deg);
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+.card {
+  perspective: 150rem;
+  filter: drop-shadow(0 0 0.35rem #000000);
+}
+
+.card-side {
+  padding: max(3vh, 1rem);
+  border-radius: 12px;
+  transition: all 1s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.39);
+  background-color: white;
 }
